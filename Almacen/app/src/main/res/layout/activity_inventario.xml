@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="10"
+    tools:context="com.example.leonides.almacen.inventario">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/texto"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Tienda:"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/caja"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="80dp"
+                    android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/texto2"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="ID:"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="230dp"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/caja2"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="270dp"
+                android:inputType="number"
+                android:textSize="18sp"/>
+
+
+                <TextView
+                    android:id="@+id/titulo"
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:text="Productos De Almacen"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/alma"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.5"
+            android:background="#FCFBFC">
+
+        </ListView>
+
+<LinearLayout
+    android:id="@+id/botones"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.5"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/pedido"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Enviar pedido"
+        android:textColor="#fff"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/consultar"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Consultar pedidos"
+        android:textColor="#fff"
+        android:layout_marginLeft="5dp"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>
+
+</LinearLayout>
